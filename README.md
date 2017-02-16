@@ -32,6 +32,7 @@ It will also be possible to recover the inserted file and in some cases execute 
 
 With Set-PowerStego you can bypass Layer 7 security solutions.
 
+###Step-to-Step
   1 - Hide a PAYLOAD inside of a image (with a good resolution);
   2 - Store the image on a Webserver that target have access;
   3 - Run the trigger (powershell command line) on the target;
@@ -40,9 +41,7 @@ With Set-PowerStego you can bypass Layer 7 security solutions.
     * Powershell payloads will be executed on the memory and PE payloads will be copied to the disk and executed.
   4 - Receive your shell.
 
-
 ### CASE STUDY - Hiding a meterpreter payload inside of image.  
-
   1 - Open the msfconsole.
   msfconsole
 
