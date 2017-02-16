@@ -32,12 +32,19 @@ It will also be possible to recover the inserted file and in some cases execute 
 
 With Set-PowerStego you can bypass Layer 7 security solutions.
 
+### METHODS:
+
+* Analyze - Analyze the selected image, obtaining information about its properties and storage capacities. Important to identify the amount of pixels in the selected image and the amount of bytes supported during insertion of a file;
+* Hide - Generate a new image hiding a file inside of a selected image; 
+* UnHide - Extracts the file that exists inside of a selected image to disk;
+* GeneratePayload - Generates two command lines (scripts), a BASE64 and a COMPRESSED scripts to execute on the target. The command lines are intended to extract a file from the selected image and run it in memory (Powershell Text - Script) or disk (BINARY - Executable file).
+
 ###Steps
-    1 - Hide a PAYLOAD inside of a image (with a good resolution).
-    2 - Store the image on a Webserver that target have access.
-    3 - Run the trigger (powershell command line) on the target.
-      * The target will download the image to the memory.
-      * The payload will be extract on the memory.
+    1 - Hide a PAYLOAD inside of a image (with a good resolution);
+    2 - Store the image on a Webserver that target have access;
+    3 - Run the trigger (powershell command line) on the target;
+      * The target will download the image to the memory;
+      * The payload will be extract on the memory;
       * Powershell payloads will be executed on the memory and PE payloads will be copied to the disk and executed.
     4 - Receive your shell.
 
